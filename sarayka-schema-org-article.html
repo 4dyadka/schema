@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+  <title>САРАЙКА: Schema.org - Шаблон для научных и научно-популярных статей</title>
+
+<style>
+html, body {height: 100%;color: #222;}
+html {line-height: 1.15;font-size: 100%;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;cursor: default;  -moz-tab-size: 4;tab-size: 4;-webkit-tap-highlight-color: transparent;word-break: break-word;}
+body {min-height: 100vh;scroll-behavior: smooth;text-rendering: optimizeSpeed;font-optical-sizing: auto;  -webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;line-height: 1.15;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0;  padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+*, *::before, *::after {box-sizing: border-box;}
+::before, ::after {background-repeat: no-repeat;text-decoration: inherit;vertical-align: inherit;}
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {display: block;}
+/* Common */
+html, body {font: 400 14pt/1.5 'Times New Roman', serif;background: #dedede;}
+.entry-content {margin: 0 auto; max-width: 768px;padding: 2em 1.9em 2em 3em;background: #fff;}
+[lang] {hyphens: auto;-webkit-hyphens: auto;-moz-hyphens: auto;-ms-hyphens: auto;-webkit-hyphenate-limit-before: 3;  -webkit-hyphenate-limit-after: 2;hyphenate-limit-chars: 6 3 2;-moz-hyphenate-limit-chars: 6 3 2;  -webkit-hyphenate-limit-chars: 6 3 2;-ms-hyphenate-limit-chars: 6 3 2;}
+.clearfix::before, .clearfix::after {content: " ";display: table;}
+.clearfix::after {clear: both;}
+.clearfix {*zoom: 1;}
+
+/* Article */
+a {text-decoration: none;}
+article {max-width: 65ch;margin: 0 auto;padding: 0;font-size: 14pt;text-align: justify;line-height: 1.5;}
+article h1, h2, h3, h4, h5, h6 {font-weight: 700;font-size: 14pt;margin: 1em 0;padding: 0;}
+header > h1, h2, p {text-indent: 0 !important;}
+[itemprop=author] {font-weight: 700;}
+[itemprop=articleSection], [itemprop=articleBody] > h1, h2, h3, h4, h5, h6, p {text-indent: 2em;}
+
+</style>
+</head>
+<body>
+<div class="entry-content clearfix">
+
+<!-- Можно, конечно, использовать и ScholarlyArticle (itemtype="http://schema.org/ScholarlyArticle") ~ учебная статья, лекция и т.д. -->
+<article itemscope itemtype="http://schema.org/Article">
+	<header>
+		<section itemscope itemprop="identifier" itemtype="http://schema.org/PropertyValue">
+		<!-- УДК классификатор-->
+		<span itemprop="propertyID">УДК</span> <a itemprop="value" href="https://www.teacode.com/online/udc/" title="История как наука (Теория и философия истории. Морфология истории)">930.1</a>
+		</section>
+		<section itemprop="author">
+		<!-- Автор: Фамилия и инициалы -->
+		Иванов И.И.
+		</section>
+		<section itemscope itemtype="http://schema.org/Person">
+		<!-- Сведения об авторе -->
+		<span itemprop="name">Иванов Иван Иванович</span>, 
+		<span itemprop="jobTitle">Доцент</span>
+		<span itemprop="worksFor">кафедры общей истории исторического факультета Нового университета</span>, 
+		<span itemprop="workLocation">ДФО г. Новый, ул. Новая, с.2</span>, 
+		<span itemprop="telephone" content="+74951010000">тел.: <a href="tel:+74951010000">+7 495 101 0000</a></span>, 
+		<span itemprop="email" content="ivanov@domain.tld">адрес электронной почты: <a href="mailto:ivanov@domain.tld">ivanov@domain.tld</a></span>
+		</section>
+		<section>
+		<!-- Заголовок статьи -->
+		<h1 itemprop="headline">Некоторые вопросы философии истории</h1>
+		<h2 itemprop="alternativeHeadline">Методология исторического исследования</h2>
+		</section>
+		<section itemprop="description" lang="ru">
+		<!-- Аннотация на руском языке -->
+		<p>Аннотация на руском языке</p>
+		</section>
+		<section itemprop="keywords" lang="ru">
+		<!-- Ключевые слова (на русском языке) -->
+		<p>Ключевые слова: <dfn>слово 1</dfn>, <dfn>слово 2</dfn>, <dfn>слово 3</dfn>...</p>
+		</section>
+		<section itemprop="description" lang="en">
+		<!-- Aннотация на английском языке -->
+		<p>Annotation in Endlish language</p>
+		</section>
+		<section itemprop="keywords" lang="en">
+		<!-- Ключевые слова (на английском языке) -->
+		<p>Keywords: <dfn>word 1</dfn>, <dfn>word 2</dfn>, <dfn>word 3</dfn>...</p>
+		</section>
+	</header>
+	<section itemprop="articleSection" content="Введение">
+		<!-- Введение -->
+		<h3>Введение</h3>
+		<p>Термин «философия истории» был введен в научный оборот французским просветителем XVIII века Вольтером. Он считал, что историк должен не просто описывать события, излагать их в хронологической последовательности, а философски истолковывать исторический процесс, рефлексировать над его бытием. Хотя термин появился в XVIII веке, но философско-исторические проблемы волновали многих мыслителей, начиная с античности.</p> 
+		<p>Гесиод, Лукреций, Августин Блаженный и другие пытались осмыслить исторический процесс, найти движущие силы его развития и изменения. В Новое время философия истории оказалась в центре внимания многих историков и философов. Гердер написал обширный труд «Идеи к философии истории человечества», в котором дается широкая панорама всей мировой истории. Как он пишет, его интересовала наука, которая описывала бы всю историю человечества с момента его зарождения. В качестве такой науки для Гердера выступает философия истории. И он создал философско-историческое произведение, сыгравшее важнейшую роль в становлении философии истории как особой дисциплины...</p>
+	</section>
+	<section itemprop="articleBody">
+		<!-- Основной текст статьи -->
+		<h3>Часть 1. Философия истории: проблемы и перспективы</h3>
+		<p>Философия истории не есть ни историческая наука отдельных государств и народов, ни универсальная или всемирная история. Последняя тоже изучает все человечество, но изучает не философски, то есть не дает философского обобщения всего исторического процесса, а исторически, то есть каждый социальный организм рассматривается во всем своем богатстве и конкретном проявлении. В курсе всемирной истории, например, изучаются все страны мира, но изучаются конкретно, в хронологическом порядке и изолированно в известном смысле слова. Так, в истории древнего мира рассматриваются наряду с первобытными племенами сложившиеся уже государственные образования (Китай, Индия, Персия, Мидия, Греция, Рим и т. д.), которые, хотя и имели некоторые общие черты, тем не менее представляли самостоятельные организмы. Историк главное внимание обращает не на их универсальные черты, а на специфические характеристики.</p> 
+		<p>Что касается философа истории, то он ищет в первую очередь именно то, что объединяет все социальные организмы, то, что им присуще как человеческим сообществам. Историческая наука, в отличие от философии истории, должна соблюдать временную последовательность событий и исторических фактов. Если философия истории есть сущность, схваченная во времени, то есть такая сущность, которая постоянно меняется, но тем не менее сохраняется, то историческая наука есть изложение фактов и событий в хронологическом порядке...</p>
+	</section>
+	<section itemprop="articleSection" content="Заключение">
+		<!-- Заключение -->
+		<h3>Заключение</h3>
+		<p>Всякий исследователь имеет определенные мировоззренческие позиции. Он живет в обществе, окружен различными социальными слоями, классами, группами, получает соответствующее образование, в котором ценностный подход играет важнейшую роль, так как любое государство прекрасно понимает, что подрастающее поколение нужно воспитывать в определенном духе, что оно должно ценить богатства, созданные его предшественниками. Кроме того, в обществе в силу его социальной дифференцированное™ имеют место разные подходы к тем или иным историческим событиям. И хотя исследователь исторических фактов должен быть объективным и беспристрастным, тем не менее он еще человек и гражданин, и ему вовсе не безразлично, что происходит в обществе, в котором он живет. Одним он сочувствует, других презирает, третьих старается не замечать. Так устроен человек, и с этим ничего не поделаешь. Поэтому он не просто изучает историческую действительность, но и волей-неволей оценивает те или иные исторические факты и события...</p>
+	</section>
+	<section itemprop="citation">
+		<!-- Список литературы -->
+		<h3>Список использованной литературы</h3>
+		<p>1. Гегель Г. В. Ф. философия права. М., 1990. С. 370.</p>
+		<p>2. Гегель Г. В. Ф. Лекции по философии истории. СПб., 1993. С. 58.</p> 
+		<p>3. Бернгейм Э. Философия истории, ее история и задачи. М., 1909. С. 7-8.</p>
+		<p>4. Зиммель Г. Проблемы философии истории. М., 1898. С. 16.</p>
+		<p>5. Барт П. Философия истории как социология. СПб., 1902. С. 10.</p> 
+		<p>6. Раппопорт X. Философия истории в ее главнейших течениях. СПб., 1898. С. 11.</p>
+		<p>7. ...</p>
+	</section>
+	<footer>
+		<section>
+		<!-- Дополнительная информация -->
+			<!-- Дата публикации: формат ГГГГ-ММ-ДД - обязательно! -->
+			Дата публикации: <span itemprop="datePublished" content="2019-12-20">20 декабря 2019</span> 
+			<!-- Дата изменения (есди необходимо): формат ГГГГ-ММ-ДД -->
+			Дата изменения: <span itemprop="dateModified" content="2019-12-21">21 декабря 2019</span> 
+			<!-- Жанр статьи (очень желательно!): 
+			- научный (статья, доклад, курсовая работа, дипломная или диссертация),
+			- научно-информативный (реферат, аннотация, конспект, тезисы),
+			- научно-справочный (словарь, справочник, каталог),
+			- научно-учебный (учебник, методическое пособие, лекция, конспект, аннотация, устный ответ, объяснение),
+			- научно-популярный (очерк, книга, лекция, статья) -->
+			<meta itemprop="genre" content="Научный">
+		</section>
+	</footer>
+</article>
+
+</div>
+</body>
+</html>
