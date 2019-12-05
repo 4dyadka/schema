@@ -9,15 +9,15 @@
 
 <style>
 html, body {height: 100%;color: #222;}
-html {line-height: 1.15;font-size: 100%;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;cursor: default;  -moz-tab-size: 4;tab-size: 4;-webkit-tap-highlight-color: transparent;word-break: break-word;}
-body {min-height: 100vh;scroll-behavior: smooth;text-rendering: optimizeSpeed;font-optical-sizing: auto;  -webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;line-height: 1.15;}
+html {line-height: 1.5;font-size: 100%;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;cursor: default;  -moz-tab-size: 4;tab-size: 4;-webkit-tap-highlight-color: transparent;word-break: break-word;}
+body {min-height: 100vh;scroll-behavior: smooth;text-rendering: optimizeSpeed;font-optical-sizing: auto;  -webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;line-height: 1.5;}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0;  padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
 *, *::before, *::after {box-sizing: border-box;}
 ::before, ::after {background-repeat: no-repeat;text-decoration: inherit;vertical-align: inherit;}
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {display: block;}
 /* Common */
 html, body {font: 400 14pt/1.5 'Times New Roman', serif;background: #dedede;}
-.entry-content {margin: 0 auto; max-width: 768px;padding: 2em 1.9em 2em 3em;background: #fff;}
+.entry-content {margin: 0 auto; max-width: 793.7px;padding: 2em 1.9em 2em 3em;background: #fff;}
 [lang] {hyphens: auto;-webkit-hyphens: auto;-moz-hyphens: auto;-ms-hyphens: auto;-webkit-hyphenate-limit-before: 3;  -webkit-hyphenate-limit-after: 2;hyphenate-limit-chars: 6 3 2;-moz-hyphenate-limit-chars: 6 3 2;  -webkit-hyphenate-limit-chars: 6 3 2;-ms-hyphenate-limit-chars: 6 3 2;}
 .clearfix::before, .clearfix::after {content: " ";display: table;}
 .clearfix::after {clear: both;}
@@ -25,11 +25,11 @@ html, body {font: 400 14pt/1.5 'Times New Roman', serif;background: #dedede;}
 
 /* Article */
 a {text-decoration: none;}
-article {max-width: 65ch;margin: 0 auto;padding: 0;font-size: 14pt;text-align: justify;line-height: 1.5;}
-article h1, h2, h3, h4, h5, h6 {font-weight: 700;font-size: 14pt;margin: 1em 0;padding: 0;}
-header > h1, h2, p {text-indent: 0 !important;}
-[itemprop=author] {font-weight: 700;}
-[itemprop=articleSection], [itemprop=articleBody] > h1, h2, h3, h4, h5, h6, p {text-indent: 2em;}
+article {width: 65ch;max-width: 607px;margin: 0 auto;padding: 0;font-size: 14pt;text-align: justify;line-height: 1.5;}
+article h1, h2, h3, h4, h5, h6 {font-weight: 700;font-size: 14pt;margin: 27.895px 0;padding: 0;}
+h1[itemprop=headline], h2[itemprop=alternativeHeadline], [itemprop=description] p, [itemprop=keywords] p, [itemprop=citation] p {text-indent: 0 !important;}
+section[itemprop=author] {font-weight: 700;}
+section[itemprop=articleSection], section[itemprop=articleBody] > h1, h2, h3, h4, h5, h6, p {text-indent: 2em !important;}
 
 </style>
 </head>
@@ -50,8 +50,8 @@ header > h1, h2, p {text-indent: 0 !important;}
 		<section itemscope itemtype="http://schema.org/Person">
 		<!-- Сведения об авторе -->
 		<span itemprop="name">Иванов Иван Иванович</span>, 
-		<span itemprop="jobTitle">Доцент</span>
-		<span itemprop="worksFor">кафедры общей истории исторического факультета Нового университета</span>, 
+		<span itemprop="jobTitle">доцент</span>
+		<span itemprop="worksFor">кафедры общей истории исторического факультета Нового университета</span>, адрес: 
 		<span itemprop="workLocation">ДФО г. Новый, ул. Новая, с.2</span>, 
 		<span itemprop="telephone" content="+74951010000">тел.: <a href="tel:+74951010000">+7 495 101 0000</a></span>, 
 		<span itemprop="email" content="ivanov@domain.tld">адрес электронной почты: <a href="mailto:ivanov@domain.tld">ivanov@domain.tld</a></span>
@@ -111,6 +111,7 @@ header > h1, h2, p {text-indent: 0 !important;}
 		<!-- Дополнительная информация -->
 			<!-- Дата публикации: формат ГГГГ-ММ-ДД - обязательно! -->
 			Дата публикации: <span itemprop="datePublished" content="2019-12-20">20 декабря 2019</span> 
+			<br />
 			<!-- Дата изменения (есди необходимо): формат ГГГГ-ММ-ДД -->
 			Дата изменения: <span itemprop="dateModified" content="2019-12-21">21 декабря 2019</span> 
 			<!-- Жанр статьи (очень желательно!): 
